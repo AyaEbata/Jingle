@@ -3,11 +3,10 @@ class BooksController < ApplicationController
     if params[:keyword].present?
       books = Amazon::Ecs.item_search(
                              params[:keyword],
-                             search_index: 'Books',
+                             search_index: 'All',
                              dataType: 'script',
                              response_group: 'ItemAttributes, Images',
-                             country: 'jp',
-                             power: 'Not kindle'
+                             country: 'jp'
       )
 
       @books = []
