@@ -27,8 +27,11 @@ body {
     color: white;
     position: fixed;
     top: 100px;
-    left: 150px;
     font-size: 150%;
+    width: 100%;
+    background-color: rgba(34,195,80,0.7);
+    text-align: center;
+    padding: 20px 0;
 }
 
 #item-img {
@@ -37,14 +40,14 @@ body {
     height: 100%;
     margin: auto;
     position: absolute;
-    top: 180px;
+    top: 210px;
     right: 0;
     left: 0;
 }
 
 #item-link-container {
     position: absolute;
-    top: 630px;
+    top: 640px;
     width: 100%;
     text-align: center;
 }
@@ -56,5 +59,13 @@ body {
 }
 
 #item-link:hover {
-    color: lightgreen;
+    color: rgb(34,195,80);
+}
+
+.present {
+    content: url("../image/present.png");
+    height: 50px;
+    display:inline;
+    white-space: nowrap;
+    margin-bottom: -17px;
 }
