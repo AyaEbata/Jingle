@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+    background-color: black;
+}
+
+#background {
+    content: url("../image/jingle.png");
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;    
+}
+
+#overlay {
+    background-color: white;
+    opacity: 0.3;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#sentence {
+    color: white;
+    position: fixed;
+    top: 100px;
+    left: 150px;
+    font-size: 150%;
+}
+
+#item-img {
+    max-height: 400px;
+    max-width: 600px;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 180px;
+    right: 0;
+    left: 0;
+}
+
+#item-link-container {
+    position: absolute;
+    top: 630px;
+    width: 100%;
+    text-align: center;
+}
+
+#item-link {
+    font-size: 150%;
+    text-decoration: none;
+    color: white;
+}
+
+#item-link:hover {
+    color: lightgreen;
+}
