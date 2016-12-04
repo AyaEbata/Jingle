@@ -3,8 +3,10 @@ class BooksController < ApplicationController
 	end
 
   def search
+    queryList = ["コスメ", "口紅"]
+
     books = Amazon::Ecs.item_search(
-                           "チョコ",
+                           queryList[rand(2)],
                            search_index: 'All',
                            dataType: 'script',
                            response_group: 'ItemAttributes, Images',
