@@ -1,7 +1,45 @@
-<div class='content'>
-  <div id="search-box">
+<video class="bgvid" src="jingle_movie.mp4" autoplay loop></video>
+
+<div class="innner-container">
+	<div class="box">
+		<h1>Jingle</h1>
+		<h2>クリスマスにピッタリのプレゼントを探します</h2> 
     <%= form_tag('/search', method: :get) do %>
-      <%= text_field_tag :book, "",  id: "book_search", name: "keyword", placeholder: "キーワードを打ち込んでください", style: "width: 200px;"%><button title="検索" type="submit">検索</button>
+			<a class="fa fa-arrow-circle-right fa-5x" aria-hidden="true" onClick="document.form.submit();"></a>
+			<button type="submit" class="fa fa-arrow-circle-right fa-5x" aria-hidden="true"></button>
     <% end %>
-  </div>
+	</div>
 </div>
+
+<style>
+.bgvid{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;}
+.box {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	font-family: Helvetica;
+	color: #fff;  
+	/*background: rgba(0,0,0,0.13);*/ 
+	padding: 30px 0px;  
+	text-align:center;
+}
+.innner-container{
+	width: 600px;
+	height: 400px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	margin: auto;
+}
+.box h1{
+	font-size:100px;
+	font-family: 'Pacifico', 
+	cursive;  margin:0;
+}
+</style>
