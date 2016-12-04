@@ -4,9 +4,9 @@
 	<div class="box">
 		<h1>Jingle</h1>
 		<h2>クリスマスにピッタリのプレゼントを探します</h2> 
-    <%= form_tag('/search', method: :get) do %>
+    <%= form_tag('/search', method: :get, name: 'form') do %>
+      <input type="submit" style="display:none;"/>
 			<a class="fa fa-arrow-circle-right fa-5x" aria-hidden="true" onClick="document.form.submit();"></a>
-			<button type="submit" class="fa fa-arrow-circle-right fa-5x" aria-hidden="true"></button>
     <% end %>
 	</div>
 </div>

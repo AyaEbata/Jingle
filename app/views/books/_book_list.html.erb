@@ -1,8 +1,16 @@
+<link rel="stylesheet" href="css/result.css" />
 <% if @books.present? %>
   <% @books.each do |book| %>
-    <div class="list">
-      <%= link_to (image_tag(book.image_url, style: "width: 70px;height: 100px;display: inline-block;")), book.url %>
-      <%= book.title %>
-    </div>
+		<div id="background"></div>
+		<div id="sentence">
+			<div class="present"></div>
+			オススメのプレゼントはコレです！！
+			<div class="present"></div>
+		</div>
+		<%= link_to(image_tag(book.image_url, id: 'item-img'))%>
+		<!-- <img id="item&#45;img" src="image/sample_item.jpg" /> -->
+		<div id="item-link-container">
+			<a id="item-link" target="_blank" href="https://goo.gl/omvX2h"><%= book.title %></a>    
+		</div>
   <% end %>
 <% end %>

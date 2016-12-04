@@ -4,23 +4,13 @@ body {
 }
 
 #background {
-    content: url("image/jingle.png");
+    content: url("/image/jingle.png");
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     height: 100%;    
-}
-
-#overlay {
-    background-color: white;
-    opacity: 0.3;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 #sentence {
@@ -63,7 +53,7 @@ body {
 }
 
 .present {
-    content: url("image/present.png");
+    content: url("/image/present.png");
     height: 50px;
     display:inline;
     white-space: nowrap;
