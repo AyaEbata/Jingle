@@ -3,9 +3,8 @@ class BooksController < ApplicationController
 	end
 
   def search
-    if params[:keyword].present?
       books = Amazon::Ecs.item_search(
-                             params[:keyword],
+                             'チョコ',
                              search_index: 'All',
                              dataType: 'script',
                              response_group: 'ItemAttributes, Images',
@@ -22,6 +21,5 @@ class BooksController < ApplicationController
         @books << book
 
       end
-    end
   end
 end
